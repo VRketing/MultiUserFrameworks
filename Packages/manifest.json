@@ -1,9 +1,11 @@
 {
   "dependencies": {
+    "com.thrashpanda.vr.simulator": "file:D:\\Projekte\\MultiUserFrameworks\\Assets\\VRSimulator\\com.thrashpanda.vr.simulator-2.1.0.tgz",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.development": "1.0.2",
     "com.unity.feature.vr": "1.0.0",
     "com.unity.learn.iet-framework": "3.1.3",
+    "com.unity.nuget.mono-cecil": "1.10.2",
     "com.unity.render-pipelines.universal": "15.0.7",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.8.2",

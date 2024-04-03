@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7f802b4dff343c045ad843a09d07cfb5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 167062
+  packageName: VR Simulator
+  packageVersion: 2.1.0
+  assetPath: Assets/VRSimulator/Editor/XRPluginInstaller.cs
+  uploadId: 489032
