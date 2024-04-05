@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Nakama.Snippets
@@ -25,20 +25,48 @@ namespace Nakama.Snippets
         private ISocket _socket;
         public GameObject playerPrefab;
         private Dictionary<string, GameObject>  players = new Dictionary<string, GameObject>();
-
-        private async void Start()
+        private void Awake()
         {
-            var deviceId = SystemInfo.deviceUniqueIdentifier;
-            var session = await _client.AuthenticateDeviceAsync(deviceId);
-            Debug.Log(session);
-
             _socket = _client.NewSocket();
             _socket.Connected += () => Debug.Log("Socket connected.");
             _socket.Closed += () => Debug.Log("Socket closed.");
             _socket.ReceivedError += Debug.LogError;
+            _socket.ReceivedMatchPresence += matchPresenceEvent =>
+            {
+                // For each player that has joined in this event...
+                foreach (var presence in matchPresenceEvent.Joins)
+                {
+                    // Spawn a player for this presence and store it in a dictionary by session id.
+                    var go = Instantiate(playerPrefab);
+                    players.Add(presence.SessionId, go);
+                }
 
+                // For each player that has left in this event...
+                foreach (var presence in matchPresenceEvent.Leaves)
+                {
+                    // Remove the player from the game if they've been spawned
+                    if (players.ContainsKey(presence.SessionId))
+                    {
+                        Destroy(players[presence.SessionId]);
+                        players.Remove(presence.SessionId);
+                    }
+
+                }
+
+            };
+        }
+        private async void Start()
+        {
+            
+            var deviceId = SystemInfo.deviceUniqueIdentifier;
+            var session = await _client.AuthenticateDeviceAsync(deviceId);
+            Debug.Log(session);
+            
+            
+            
             IUserPresence self = null;
             var connectedOpponents = new List<IUserPresence>(2);
+            
             _socket.ReceivedMatchmakerMatched += async matched =>
             {
                 Debug.LogFormat("Matched result: {0}", matched);
@@ -48,19 +76,7 @@ namespace Nakama.Snippets
                 Debug.LogFormat("Self: {0}", self);
                 connectedOpponents.AddRange(match.Presences);
             };
-            _socket.ReceivedMatchPresence += presenceEvent =>
-            {
-                foreach (var presence in presenceEvent.Joins)
-                {
-                    var go = Instantiate(playerPrefab);
-                    players.Add(presence.SessionId, go);
-
-                }
-                connectedOpponents.AddRange(presenceEvent.Joins);
-                // Remove yourself from connected opponents.
-                //connectedOpponents.Remove(self);
-                Debug.LogFormat("Connected opponents: [{0}]", string.Join(",\n  ", connectedOpponents));
-            };
+           
             await _socket.ConnectAsync(session);
             Debug.Log("After socket connected.");
             await _socket.AddMatchmakerAsync("*", 2, 2);
@@ -73,14 +89,23 @@ namespace Nakama.Snippets
             socket2.ReceivedMatchmakerMatched += async matched => await socket2.JoinMatchAsync(matched);
             await socket2.ConnectAsync(session2);
             await socket2.AddMatchmakerAsync("*", 2, 2);
-            await Task.Delay(TimeSpan.FromSeconds(10)); // disconnect after 10 seconds.
+            //await Task.Delay(TimeSpan.FromSeconds(10)); // disconnect after 10 seconds.
             Debug.Log("After delay socket2 closed.");
-            await socket2.CloseAsync();
+            //await socket2.CloseAsync();
         }
 
         private void OnApplicationQuit()
         {
             _socket?.CloseAsync();
+        }
+
+        
+
+        private void spawnPlayer(string sessionId)
+        {
+            var go = Instantiate(playerPrefab);
+            Debug.Log("Player spawned");
+            players.Add(sessionId, go);
         }
     }
 }
