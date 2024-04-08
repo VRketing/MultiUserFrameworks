@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 35bf2081f2aa49c4d8487e30610f5900
+AssemblyDefinitionReferenceImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/LucidSight.Sample.ExampleCode.asmref
+  uploadId: 435554

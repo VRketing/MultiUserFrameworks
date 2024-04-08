@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7d8788162c0190c4c8b801543ada1607
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/LucidSight.Runtime.ColyseusSDK.asmdef
+  uploadId: 435554

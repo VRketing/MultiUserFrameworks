@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fd306dec888e0a74eaee1fb20c50d1cb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/Scripts/States/ExampleNetworkedEntity.Clone.cs
+  uploadId: 435554

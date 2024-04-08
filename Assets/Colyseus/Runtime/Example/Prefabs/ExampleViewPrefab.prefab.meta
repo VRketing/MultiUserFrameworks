@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bf4d5856d61fdb0468016f936051293e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/Prefabs/ExampleViewPrefab.prefab
+  uploadId: 435554

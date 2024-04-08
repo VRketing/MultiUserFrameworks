@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e0d64eda35ff7e4408b1587a8edcaa3e
+PackageManifestImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/package.json
+  uploadId: 435554

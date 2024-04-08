@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 22a43064d5e376a4ba55051d4ba21aaf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/Scripts/ExampleRoomController.cs
+  uploadId: 435554

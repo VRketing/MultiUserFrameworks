@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d57b38d25c4747e41aeea64fc401926f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/GameDevWare.Serialization/Serializers/PrimitiveTypeSerializer.cs
+  uploadId: 435554

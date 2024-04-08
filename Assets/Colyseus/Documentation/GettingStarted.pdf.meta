@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2d7d4f5772e16ed4f84059884cd9ce6a
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Documentation/GettingStarted.pdf
+  uploadId: 435554

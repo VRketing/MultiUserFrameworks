@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7c13315c552c69643bcd9857054ed868
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/GameDevWare.Serialization/MessagePack/DefaultMsgPackExtensionTypeHandler.cs
+  uploadId: 435554

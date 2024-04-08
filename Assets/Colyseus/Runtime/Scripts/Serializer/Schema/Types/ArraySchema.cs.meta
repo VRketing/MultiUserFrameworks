@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3ab256d5bbbf81a4591a87d62c22a878
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Scripts/Serializer/Schema/Types/ArraySchema.cs
+  uploadId: 435554

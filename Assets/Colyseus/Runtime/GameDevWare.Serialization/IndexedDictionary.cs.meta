@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f42194306ce91bf49b1c2b3bde5d663f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/GameDevWare.Serialization/IndexedDictionary.cs
+  uploadId: 435554

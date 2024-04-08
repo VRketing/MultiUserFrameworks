@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 28fed75626a4d4144b26bef3670248f7
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/LICENSE
+  uploadId: 435554

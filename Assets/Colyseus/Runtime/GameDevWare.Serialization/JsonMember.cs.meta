@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 24db570c9f212f34c949654a348bc6ca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/GameDevWare.Serialization/JsonMember.cs
+  uploadId: 435554

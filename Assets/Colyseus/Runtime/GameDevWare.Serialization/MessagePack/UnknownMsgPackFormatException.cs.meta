@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ba5e6b337b5f41e44a1abe2810fcfe57
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/GameDevWare.Serialization/MessagePack/UnknownMsgPackFormatException.cs
+  uploadId: 435554

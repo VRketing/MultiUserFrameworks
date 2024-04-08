@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 46de100349a4e614dabe1c75c026bc3d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Tests/Editor/ColyseusTests/Schema/ChildSchemaTypes/ChildSchemaTypes.cs
+  uploadId: 435554

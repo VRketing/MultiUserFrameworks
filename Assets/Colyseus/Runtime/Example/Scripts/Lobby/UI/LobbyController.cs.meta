@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2aca67152b9cb934dbea32cf2ae8d6ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/Scripts/Lobby/UI/LobbyController.cs
+  uploadId: 435554

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d3b41e861ed39554bb09eec3c023be74
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Scripts/Serializer/ColyseusSerializer.cs
+  uploadId: 435554

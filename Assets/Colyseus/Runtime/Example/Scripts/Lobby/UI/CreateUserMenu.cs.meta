@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 010cee042acbf4a4c946c9c288dbdd1c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/Scripts/Lobby/UI/CreateUserMenu.cs
+  uploadId: 435554

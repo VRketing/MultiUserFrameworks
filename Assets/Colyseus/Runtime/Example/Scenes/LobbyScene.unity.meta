@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d34c82824e6b2fc4fb5a7cd7f4b1884e
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/Scenes/LobbyScene.unity
+  uploadId: 435554

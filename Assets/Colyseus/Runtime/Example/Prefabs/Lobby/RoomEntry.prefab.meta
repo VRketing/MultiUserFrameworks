@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 645445b8b9b6fdf4294ed55c12a69a10
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195230
+  packageName: Colyseus SDK
+  packageVersion: 0.14.5
+  assetPath: Assets/Colyseus/Runtime/Example/Prefabs/Lobby/RoomEntry.prefab
+  uploadId: 435554
