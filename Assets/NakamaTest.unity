@@ -523,6 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawner: {fileID: 961496302}
+  playerCount: 5
 --- !u!114 &961496302
 MonoBehaviour:
   m_ObjectHideFlags: 0

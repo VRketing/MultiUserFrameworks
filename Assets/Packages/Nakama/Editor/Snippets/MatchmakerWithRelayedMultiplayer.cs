@@ -25,7 +25,7 @@ namespace Nakama.Snippets
         private readonly IClient _client = new Client("defaultkey");
         private ISocket _socket;
         public PlayerSpawner playerSpawner;
-        
+        public int playerCount = 0;
         private async void Start()
         {
             
@@ -75,7 +75,7 @@ namespace Nakama.Snippets
 
 
             // NOTE As an example create a second user and socket to matchmake against.
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < playerCount; i++)
             {
                 var deviceId2 = Guid.NewGuid().ToString();
                 var session2 = await _client.AuthenticateDeviceAsync(deviceId2);
