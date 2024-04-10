@@ -1,7 +1,7 @@
 {
     "Version": 1,
     "TypeId": "NetworkProjectConfig",
-    "PeerMode": 0,
+    "PeerMode": 1,
     "LagCompensation": {
         "Enabled": false,
         "HitboxBufferLengthInMs": 200,
@@ -11,12 +11,12 @@
     "EnqueueIncompleteSynchronousSpawns": false,
     "InvokeRenderInBatchMode": true,
     "NetworkIdIsObjectName": false,
-    "HideNetworkObjectInactivityGuard": false,
+    "HideNetworkObjectInactivityGuard": true,
     "Simulation": {
         "InputDataWordCount": 0,
         "ReplicationFeatures": 1,
         "InputTransferMode": 0,
-        "PlayerCount": 10,
+        "PlayerCount": 255,
         "TickRateSelection": {
             "Client": 64,
             "ServerIndex": 0,
@@ -39,17 +39,17 @@
     "NetworkConditions": {
         "Enabled": false,
         "DelayShape": 0,
-        "DelayMin": 0.15,
-        "DelayMax": 0.15,
-        "DelayPeriod": 0.0,
-        "DelayThreshold": 0.0,
-        "AdditionalJitter": 0.05,
+        "DelayMin": 0.25699999928474429,
+        "DelayMax": 0.13099999725818638,
+        "DelayPeriod": 1.1200000047683716,
+        "DelayThreshold": 0.03700000047683716,
+        "AdditionalJitter": 0.5649999976158142,
         "LossChanceShape": 0,
-        "LossChanceMin": 0.05,
-        "LossChanceMax": 0.05,
+        "LossChanceMin": 0.5099999904632568,
+        "LossChanceMax": 0.382999986410141,
         "LossChanceThreshold": 0.0,
         "LossChancePeriod": 0.0,
-        "AdditionalLoss": 0.0
+        "AdditionalLoss": 0.3519999980926514
     },
     "Heap": {
         "PageShift": 15,

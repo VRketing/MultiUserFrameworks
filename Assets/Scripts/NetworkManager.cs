@@ -7,12 +7,17 @@ using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
-public class NetworkManager : MonoBehaviour
+public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
 {
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacters = new Dictionary<PlayerRef, NetworkObject>();
     private NetworkRunner _runner;
     [SerializeField] GameMode gameMode = GameMode.Client;
+
+    private void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
@@ -37,7 +42,11 @@ public class NetworkManager : MonoBehaviour
     public void OnInput(NetworkRunner runner, NetworkInput input) { }
     public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input) { }
     public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason) { }
-    public void OnConnectedToServer(NetworkRunner runner) { }
+    public void OnConnectedToServer(NetworkRunner runner) 
+    {
+        _runner = runner;
+        
+    }
     public void OnDisconnectedFromServer(NetworkRunner runner, NetDisconnectReason reason) { }
     public void OnConnectRequest(NetworkRunner runner, NetworkRunnerCallbackArgs.ConnectRequest request, byte[] token) { }
     public void OnConnectFailed(NetworkRunner runner, NetAddress remoteAddress, NetConnectFailedReason reason) { }
@@ -51,4 +60,29 @@ public class NetworkManager : MonoBehaviour
     public void OnObjectEnterAOI(NetworkRunner runner, NetworkObject obj, PlayerRef player) { }
     public void OnReliableDataReceived(NetworkRunner runner, PlayerRef player, ReliableKey key, ArraySegment<byte> data) { }
     public void OnReliableDataProgress(NetworkRunner runner, PlayerRef player, ReliableKey key, float progress) { }
+
+    public async void StartGame(GameMode mode)
+    {
+        // Create the Fusion runner and let it know that we will be providing user input
+        _runner = new GameObject("Network Runner").AddComponent<NetworkRunner>();
+        _runner.ProvideInput = true;
+
+        // Create the NetworkSceneInfo from the current scene
+        var scene = SceneRef.FromIndex(0);
+        var sceneInfo = new NetworkSceneInfo();
+        if (scene.IsValid)
+        {
+            sceneInfo.AddSceneRef(scene, LoadSceneMode.Additive);
+        }
+
+        // Start or join (depends on gamemode) a session with a specific name
+        await _runner.StartGame(new StartGameArgs()
+        {
+            GameMode = mode,
+            SessionName = "Test",
+            Scene = scene,
+            SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
+        });
+        
+    }
 }
