@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-
+/*
 [CustomEditor(typeof(NetworkManager))]
 public class PhotonNetworkManagerEditor : Editor
 {
@@ -16,3 +16,4 @@ public class PhotonNetworkManagerEditor : Editor
         }
     }
 }
+*/
