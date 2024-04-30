@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using Unity.Collections;
 using Unity.Entities;
@@ -112,3 +113,4 @@ public partial struct GoInGameServerSystem : ISystem
     }
 
 }
+*/

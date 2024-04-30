@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/NakamaTest.unity
     guid: d77e8a7f6d66410458640f594e6e6b5a
   - enabled: 0
-    path: Assets/Test.unity
+    path: Assets/PhotonAtmokyTest.unity
     guid: 8194c2cf172e33d41a469db8ef1b4723
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
@@ -17,9 +17,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Photon/PhotonVoice/Demos/Fusion/DemoNetworkObject/Scene.unity
     guid: 64b14236c88a0fb44adaeda9ded16a2a
-  - enabled: 1
+  - enabled: 0
     path: Assets/DOTSTest.unity
     guid: bb84ce1d71e1d5248b29bfb3d9f85e03
+  - enabled: 0
+    path: Assets/PhotonAtmokyTest.unity
+    guid: 8194c2cf172e33d41a469db8ef1b4723
+  - enabled: 1
+    path: Assets/NETTest.unity
+    guid: 72e8dc19822f40946b94ee0fadea50b4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

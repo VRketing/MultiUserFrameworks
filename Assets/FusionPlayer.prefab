@@ -1939,11 +1939,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhotonSpeaker
       objectReference: {fileID: 0}
+    - target: {fileID: 8975494319703191494, guid: 7195dc148c882724bb5c96768a84118b, type: 3}
+      propertyPath: Spatialize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975494319703191494, guid: 7195dc148c882724bb5c96768a84118b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 070e4588354a3d24ebb714b243d565b2, type: 2}
+    - target: {fileID: 8975494319703191494, guid: 7195dc148c882724bb5c96768a84118b, type: 3}
+      propertyPath: SpatializePostEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975494319703191494, guid: 7195dc148c882724bb5c96768a84118b, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4583516168127114723, guid: 7195dc148c882724bb5c96768a84118b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7207987985650272062}
   m_SourcePrefab: {fileID: 100100000, guid: 7195dc148c882724bb5c96768a84118b, type: 3}
+--- !u!1 &548475466049206015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4583516168127114723, guid: 7195dc148c882724bb5c96768a84118b, type: 3}
+  m_PrefabInstance: {fileID: 4037327722787691292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7207987985650272062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548475466049206015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240d865a19b2743cf8b01f4fe70c34fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendererIndex: 1
+  occlusion: 0
+  innerAngle: 90
+  outerAngle: 270
+  outerGain: 1
+  outerLowpass: 0
+  nfeDistance: 1
+  nfeGain: 0.75
+  nfeBassBoost: 0
+  isSerialized: 1
 --- !u!4 &2988856304632779222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1260432668089780938, guid: 7195dc148c882724bb5c96768a84118b, type: 3}

@@ -1,3 +1,4 @@
+/*
 using System;
 using Unity.Entities;
 using Unity.NetCode;
@@ -11,3 +12,4 @@ public class NetcodeManager : ClientServerBootstrap
         return base.Initialize(defaultWorldName); // Use the regular bootstrap
     }
 }
+*/
